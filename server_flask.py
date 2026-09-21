@@ -16,7 +16,7 @@ ADMIN_EMAIL = os.environ.get("ADMIN_EMAIL", "samuelbashimbirwa@gmail.com")
 SMTP_SERVER = os.environ.get("SMTP_SERVER", "smtp.gmail.com")
 SMTP_PORT = int(os.environ.get("SMTP_PORT", 587))
 SMTP_USER = os.environ.get("SMTP_USER", ADMIN_EMAIL)
-SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "")
+SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "lhdw kzro nsin mxld")
 
 # Registre en mémoire des questions reçues
 questions_db = []

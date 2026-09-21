@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                     onOpenModal("community");
                   }}
                   className="w-9 h-9 rounded-full bg-white border border-[#DDD5C5] hover:border-[#D4A346] hover:bg-[#F7F2E7] flex items-center justify-center transition-colors"
-                  aria-label="Facebook Kimia"
+                  aria-label="Facebook MALK'ia"
                 >
                   <Facebook className="w-4 h-4 fill-current" />
                 </a>
@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                     onOpenModal("community");
                   }}
                   className="w-9 h-9 rounded-full bg-white border border-[#DDD5C5] hover:border-[#D4A346] hover:bg-[#F7F2E7] flex items-center justify-center transition-colors"
-                  aria-label="Instagram Kimia"
+                  aria-label="Instagram MALK'ia"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
@@ -48,7 +48,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                     onOpenModal("video");
                   }}
                   className="w-9 h-9 rounded-full bg-white border border-[#DDD5C5] hover:border-[#D4A346] hover:bg-[#F7F2E7] flex items-center justify-center transition-colors"
-                  aria-label="YouTube Kimia"
+                  aria-label="YouTube MALK'ia"
                 >
                   <Youtube className="w-4 h-4 fill-current" />
                 </a>
@@ -59,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                     onOpenModal("community");
                   }}
                   className="w-9 h-9 rounded-full bg-white border border-[#DDD5C5] hover:border-[#D4A346] hover:bg-[#F7F2E7] flex items-center justify-center transition-colors"
-                  aria-label="LinkedIn Kimia"
+                  aria-label="LinkedIn MALK'ia"
                 >
                   <Linkedin className="w-4 h-4 fill-current" />
                 </a>
@@ -145,6 +145,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                   Nous contacter
                 </a>
               </li>
+              <li>
+                <button
+                  onClick={() => onOpenModal("diagnostics")}
+                  className="text-xs font-semibold text-[#966723] hover:underline transition-colors text-left cursor-pointer flex items-center gap-1.5"
+                >
+                  <span>Diagnostic & Test E-mails</span>
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -157,13 +165,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
               <Smartphone className="w-5 h-5" />
               <span>Télécharger l'application</span>
             </button>
-            <p className="text-xs text-center text-[#736B5E]">Kimia, toujours avec vous.</p>
+            <p className="text-xs text-center text-[#736B5E]">MALK'ia, toujours avec vous.</p>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#7A7264]">
-          <p>© 2026 Kimia. Tous droits réservés.</p>
+          <p>© 2026 MALK'ia. Tous droits réservés.</p>
           <p className="flex items-center gap-1.5">
             <span>Une initiative pour des femmes plus fortes en RDC</span>
             <span className="text-[#C5993F]">💛</span>

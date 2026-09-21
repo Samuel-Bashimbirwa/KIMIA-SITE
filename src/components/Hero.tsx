@@ -24,15 +24,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-[54px] font-bold text-[#1E1C1A] leading-[1.12] tracking-tight">
               Connaître ses droits <br />
               <span className="text-[#C5993F] font-normal italic">
-                c'est mieux se protéger
+                c'est mieux
               </span>
             </h1>
 
             {/* Subtext description */}
             <p className="text-[#595247] text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
-              Kimia est une initiative dédiée à l'information, à l'accompagnement et à la défense des
-              femmes en République Démocratique du Congo. Découvrez notre guide complet sur les lois
-              congolaises et internationales contre les violences et les abus.
+              MALK'ia est une initiative dédiée à l'information, à l'accompagnement et à la défense des
+              femmes en République Démocratique du Congo. Découvrez le livre « L'ABC des Violences Basées sur le Genre » par NGOIE WA NGOIE et notre guide complet sur les droits des femmes face aux violences et aux abus.
             </p>
 
             {/* 2 Main Buttons matching the mockup */}

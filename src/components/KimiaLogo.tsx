@@ -34,7 +34,7 @@ export const KimiaLogo: React.FC<KimiaLogoProps> = ({
       {/* Woman Silhouette with Headwrap Icon */}
       <div
         className={`${iconSizes[size]} shrink-0 rounded-full flex items-center justify-center bg-[#FAF4E8] text-[#1E1C1A] border border-[#E8DEC8] shadow-xs`}
-        title="Kimia - Défense des droits des femmes"
+        title="MALK'ia - Défense des droits des femmes"
       >
         <svg
           viewBox="0 0 48 48"
@@ -65,13 +65,13 @@ export const KimiaLogo: React.FC<KimiaLogoProps> = ({
         <span
           className={`font-serif font-bold tracking-tight text-[#1E1C1A] leading-tight ${textSizes[size]}`}
         >
-          Kimia
+          MALK'ia
         </span>
         {showSubtitle && (
           <span
             className={`text-[#736B5E] font-medium tracking-normal leading-none mt-0.5 ${subSizes[size]}`}
           >
-            Connaître ses droits, c'est mieux se protéger
+            Connaître ses droits, c'est mieux
           </span>
         )}
       </div>

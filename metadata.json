@@ -1,6 +1,6 @@
 {
-  "name": "Kimia",
-  "description": "Plateforme et guide de référence pour les droits des femmes en République Démocratique du Congo. Connaître ses droits, c'est mieux se protéger.",
+  "name": "MALK'ia",
+  "description": "Plateforme et guide de référence pour les droits des femmes en République Démocratique du Congo. Connaître ses droits, c'est mieux.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

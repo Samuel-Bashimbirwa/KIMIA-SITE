@@ -20,6 +20,7 @@ import {
 import { ModalType } from "../types";
 import { FAQ_ITEMS, LAWYER_PARTNERS } from "../data/kimiaData";
 import bookImg from "../assets/images/kimia_guide_book_1790018924214.jpg";
+import { DiagnosticsModalContent } from "./DiagnosticsModal";
 
 interface ModalsProps {
   activeModal: ModalType;
@@ -57,6 +58,7 @@ export const Modals: React.FC<ModalsProps> = ({
         {activeModal === "terms" && <TermsModalContent onClose={onClose} />}
         {activeModal === "privacy" && <PrivacyModalContent onClose={onClose} />}
         {activeModal === "faq" && <FaqModalContent onClose={onClose} />}
+        {activeModal === "diagnostics" && <DiagnosticsModalContent onClose={onClose} />}
       </div>
     </div>
   );
@@ -100,10 +102,10 @@ const BookModalContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         </div>
         <div>
           <h3 className="font-serif text-2xl font-bold text-[#1E1C1A]">
-            Procurez-vous le livre Kimia
+            Procurez-vous le livre MALK'ia
           </h3>
           <p className="text-xs text-[#736B5E]">
-            Le guide des droits des femmes face aux violences et aux abus en RDC
+            L'ABC des Violences Basées sur le Genre par NGOIE WA NGOIE
           </p>
         </div>
       </div>
@@ -148,7 +150,7 @@ const BookModalContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                 href="#download-sample"
                 onClick={(e) => {
                   e.preventDefault();
-                  alert("Le téléchargement du guide numérique Kimia (PDF sécurisé) est lancé !");
+                  alert("Le téléchargement du guide numérique MALK'ia (PDF sécurisé) est lancé !");
                 }}
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#D4A346] text-[#1E1C1A] font-semibold text-sm rounded-xl hover:bg-[#C59639]"
               >
@@ -260,7 +262,7 @@ const BookModalContent: React.FC<{ onClose: () => void }> = ({ onClose }) => {
               />
               <span className="text-xs text-[#524B40] leading-snug">
                 Je commande pour une association, une école ou en tant que personne vulnérable
-                (exemplaire offert par l'initiative Kimia).
+                (exemplaire offert par l'initiative MALK'ia).
               </span>
             </label>
 
@@ -327,7 +329,7 @@ const CommunityModalContent: React.FC<{ onClose: () => void }> = ({ onClose }) =
         </div>
         <div>
           <h3 className="font-serif text-2xl font-bold text-[#1E1C1A]">
-            Intégrer la communauté Kimia
+            Intégrer la communauté MALK'ia
           </h3>
           <p className="text-xs text-[#736B5E]">
             Un réseau solidaire pour s'informer, s'entraider et ne plus jamais être seule
@@ -340,7 +342,7 @@ const CommunityModalContent: React.FC<{ onClose: () => void }> = ({ onClose }) =
           <CheckCircle2 className="w-12 h-12 text-[#3D774D] mx-auto" />
           <h4 className="font-serif font-bold text-xl text-[#1E1C1A]">Bienvenue parmi nous !</h4>
           <p className="text-sm text-[#5C5549]">
-            Vous avez rejoint le cercle de solidarité Kimia. Nous vous envoyons les liens d'accès
+            Vous avez rejoint le cercle de solidarité MALK'ia. Nous vous envoyons les liens d'accès
             sécurisés pour participer aux groupes d'échange régionaux.
           </p>
           <button
@@ -433,7 +435,7 @@ const LawyerModalContent: React.FC<{ onClose: () => void; onOpenContact: () => v
         </div>
         <div>
           <h3 className="font-serif text-2xl font-bold text-[#1E1C1A]">
-            Avocats partenaires Kimia
+            Avocats partenaires MALK'ia
           </h3>
           <p className="text-xs text-[#736B5E]">
             Orientation juridique gratuite et assistance en RDC
@@ -494,7 +496,7 @@ const LawyerModalContent: React.FC<{ onClose: () => void; onOpenContact: () => v
       </div>
 
       <div className="p-3.5 bg-[#FAF4E8] rounded-xl border border-[#ECDDBF] text-xs text-[#75591D]">
-        💡 Les consultations initiales d'orientation sont gratuites. Kimia facilite votre mise en relation directe.
+        💡 Les consultations initiales d'orientation sont gratuites. MALK'ia facilite votre mise en relation directe.
       </div>
     </div>
   );
@@ -512,7 +514,7 @@ const AppModalContent: React.FC<{ onClose: () => void }> = () => {
 
       <div>
         <h3 className="font-serif text-2xl font-bold text-[#1E1C1A]">
-          Application mobile Kimia
+          Application mobile MALK'ia
         </h3>
         <p className="text-xs sm:text-sm text-[#736B5E] max-w-md mx-auto mt-1">
           Votre guide juridique toujours dans votre poche, accessible 100% hors-ligne.
@@ -551,11 +553,11 @@ const AppModalContent: React.FC<{ onClose: () => void }> = () => {
 
       <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
         <button
-          onClick={() => alert("L'application Kimia pour Android (fichier APK sécurisé) est en cours de téléchargement !")}
+          onClick={() => alert("L'application MALK'ia pour Android (fichier APK sécurisé) est en cours de téléchargement !")}
           className="w-full sm:w-auto px-6 py-3 bg-[#D4A346] hover:bg-[#C59639] text-[#1E1C1A] font-semibold text-sm rounded-xl transition-all shadow-xs flex items-center justify-center gap-2"
         >
           <Download className="w-4 h-4" />
-          <span>Télécharger Kimia (Android APK)</span>
+          <span>Télécharger MALK'ia (Android APK)</span>
         </button>
 
         <button
@@ -636,7 +638,7 @@ const VideoModalContent: React.FC<{ onClose: () => void }> = () => {
       <div className="p-4 bg-white rounded-xl border border-[#E9E1D2] text-xs text-[#4F493E] space-y-2">
         <p className="font-semibold text-[#1E1C1A]">Transcription résumée :</p>
         <p className="leading-relaxed">
-          « Quand la violence a débuté dans mon foyer, je pensais que c'était le destin de toutes les femmes. Lorsque j'ai eu entre les mains le guide Kimia et que j'ai lu les articles du Code Pénal et du Code de la Famille, j'ai compris que la violence n'est ni une coutume ni une fatalité, c'est un délit. Aujourd'hui, je suis autonome et j'aide d'autres femmes à Goma. »
+          « Quand la violence a débuté dans mon foyer, je pensais que c'était le destin de toutes les femmes. Lorsque j'ai eu entre les mains le livre « L'ABC des Violences Basées sur le Genre » de MALK'ia et que j'ai lu les articles du Code Pénal et du Code de la Famille, j'ai compris que la violence n'est ni une coutume ni une fatalité, c'est un délit. Aujourd'hui, je suis autonome et j'aide d'autres femmes à Goma. »
         </p>
       </div>
     </div>
@@ -659,16 +661,16 @@ const TermsModalContent: React.FC<{ onClose: () => void }> = () => {
 
       <div className="space-y-3 text-xs text-[#524B40] leading-relaxed max-h-80 overflow-y-auto pr-2">
         <p>
-          <strong>1. Objet de la plateforme :</strong> Kimia est une initiative citoyenne et juridique indépendante destinée à vulgariser le droit et à orienter les femmes en République Démocratique du Congo. Les informations fournies ont une valeur informative et éducative.
+          <strong>1. Objet de la plateforme :</strong> MALK'ia est une initiative citoyenne et juridique indépendante destinée à vulgariser le droit et à orienter les femmes en République Démocratique du Congo. Les informations fournies ont une valeur informative et éducative.
         </p>
         <p>
           <strong>2. Gratuité de l'orientation :</strong> L'accès aux synthèses de lois, aux contenus du site et à la mise en relation avec nos partenaires est entièrement gratuit.
         </p>
         <p>
-          <strong>3. Responsabilité :</strong> Bien que les fiches soient relues par des juristes qualifiés, Kimia ne remplace pas une décision judiciaire ni l'intervention formelle d'un avocat constitué dans une procédure en cours.
+          <strong>3. Responsabilité :</strong> Bien que les fiches soient relues par des juristes qualifiés, MALK'ia ne remplace pas une décision judiciaire ni l'intervention formelle d'un avocat constitué dans une procédure en cours.
         </p>
         <p>
-          <strong>4. Propriété intellectuelle :</strong> Le guide Kimia et ses illustrations sont protégés. La reproduction à des fins commerciales sans autorisation est interdite. La reproduction à des fins de sensibilisation communautaire non commerciale est encouragée.
+          <strong>4. Propriété intellectuelle :</strong> Le guide et le livre MALK'ia et leurs illustrations sont protégés. La reproduction à des fins commerciales sans autorisation est interdite. La reproduction à des fins de sensibilisation communautaire non commerciale est encouragée.
         </p>
       </div>
     </div>
@@ -697,7 +699,7 @@ const PrivacyModalContent: React.FC<{ onClose: () => void }> = () => {
           <strong>Usage de pseudonyme :</strong> Vous avez le droit d'utiliser un prénom fictif ou un pseudonyme pour poser vos questions à notre équipe.
         </p>
         <p>
-          <strong>Destinataire des requêtes :</strong> Vos messages sont directement transmis à la coordination administrative de Kimia (samuelbashimbirwa@gmail.com) et traités avec la plus stricte déontologie.
+          <strong>Destinataire des requêtes :</strong> Vos messages sont directement transmis à la coordination administrative de MALK'ia (samuelbashimbirwa@gmail.com) et traités avec la plus stricte déontologie.
         </p>
         <p>
           <strong>Suppression immédiate :</strong> Vous pouvez à tout moment demander l'effacement définitif de tout historique de vos messages.

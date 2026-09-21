@@ -1,7 +1,7 @@
 import React from "react";
 import { CheckCircle2, BookOpen, ArrowRight, Eye } from "lucide-react";
 import { ModalType } from "../types";
-import bookImg from "../assets/images/kimia_guide_book_1790018924214.jpg";
+import bookImg from "../assets/images/book_cover_malkia_1790028433830.jpg";
 
 interface BookSectionProps {
   onOpenModal: (type: ModalType) => void;
@@ -23,11 +23,14 @@ export const BookSection: React.FC<BookSectionProps> = ({ onOpenModal }) => {
           <div className="lg:col-span-6 space-y-6">
             <div>
               <p className="text-xs font-bold tracking-widest uppercase text-[#C5993F]">
-                Notre livre
+                Le livre de référence
               </p>
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#1E1C1A] mt-2 leading-tight">
-                Un guide essentiel pour toutes
+                L'ABC des Violences Basées sur le Genre
               </h2>
+              <p className="text-sm font-semibold text-[#8B6E30] mt-1 tracking-wide">
+                par NGOIE WA NGOIE
+              </p>
             </div>
 
             <p className="text-[#595247] text-base sm:text-lg leading-relaxed font-normal">
@@ -90,7 +93,7 @@ export const BookSection: React.FC<BookSectionProps> = ({ onOpenModal }) => {
                   <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#E3DAC8] bg-white max-w-[320px] sm:max-w-[360px]">
                     <img
                       src={bookImg}
-                      alt="Le guide des droits des femmes - Kimia"
+                      alt="L'ABC des Violences Basées sur le Genre par NGOIE WA NGOIE - MALK'ia"
                       className="w-full h-auto object-cover"
                     />
                   </div>

@@ -42,4 +42,5 @@ export type ModalType =
   | "terms"
   | "privacy"
   | "faq"
-  | "video";
+  | "video"
+  | "diagnostics";

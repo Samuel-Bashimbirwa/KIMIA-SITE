@@ -23,7 +23,7 @@ export const ContactSection: React.FC = () => {
     "Orientation juridique",
     "Signaler une violence ou abus",
     "Demande d'assistance d'un avocat",
-    "Commander le guide / livre Kimia",
+    "Commander le livre « L'ABC des VBG »",
     "Rejoindre le réseau d'avocats ou relais",
     "Autre question générale",
   ];

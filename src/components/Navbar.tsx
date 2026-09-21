@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { KimiaLogo } from "./KimiaLogo";
-import { ChevronDown, Menu, X, BookOpen, Users, Scale, PhoneCall, Smartphone, ShieldCheck, HelpCircle, FileText, Lock } from "lucide-react";
+import { ChevronDown, Menu, X, BookOpen, Users, Scale, PhoneCall, Smartphone, ShieldCheck, HelpCircle, FileText, Lock, Activity } from "lucide-react";
 import { ModalType } from "../types";
 
 interface NavbarProps {
@@ -175,6 +175,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal, activeSection }) =>
                   <Lock className="w-4 h-4 text-[#736B5E]" />
                   <span>Politique de confidentialité du site</span>
                 </button>
+
+                <div className="border-t border-[#F4EFE6] my-1 pt-1">
+                  <button
+                    onClick={() => {
+                      setDropdownOpen(false);
+                      onOpenModal("diagnostics");
+                    }}
+                    className="w-full text-left px-3.5 py-2 text-xs font-semibold text-[#8B5E1E] bg-[#FFF8EB] hover:bg-[#FBEED3] flex items-center gap-2.5 rounded-lg transition-colors cursor-pointer"
+                  >
+                    <Activity className="w-3.5 h-3.5 text-[#B8882C]" />
+                    <span>Diagnostic & Test E-mails</span>
+                  </button>
+                </div>
               </div>
             )}
           </div>
@@ -265,6 +278,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal, activeSection }) =>
               className="w-full text-left px-3 py-2 text-sm text-[#2D2A26] flex items-center gap-2 hover:bg-[#F3EDE1] rounded-md"
             >
               <Lock className="w-4 h-4 text-[#736B5E]" /> Politique du site
+            </button>
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenModal("diagnostics");
+              }}
+              className="w-full text-left px-3 py-2 text-sm text-[#8B5E1E] bg-[#FFF8EB] flex items-center gap-2 rounded-md font-semibold"
+            >
+              <Activity className="w-4 h-4 text-[#B8882C]" /> Diagnostic & Test E-mails
             </button>
           </div>
         </div>

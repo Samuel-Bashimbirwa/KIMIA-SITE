@@ -51,13 +51,13 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     category: "aide",
-    question: "Comment puis-je contacter un avocat partenaire de Kimia gratuitement ?",
-    answer: "Vous pouvez soumettre une demande via notre formulaire ou notre ligne directe. Kimia collabore avec des barreaux et des associations de femmes juristes en RDC (AFEJUCO, CAFCO) qui offrent des permanences juridiques d'orientation sans frais.",
+    question: "Comment puis-je contacter un avocat partenaire de MALK'ia gratuitement ?",
+    answer: "Vous pouvez soumettre une demande via notre formulaire ou notre ligne directe. MALK'ia collabore avec des barreaux et des associations de femmes juristes en RDC (AFEJUCO, CAFCO) qui offrent des permanences juridiques d'orientation sans frais.",
   },
   {
     category: "livre",
-    question: "Comment se procurer le guide 'Kimia : Le guide des droits des femmes' ?",
-    answer: "Le livre est disponible en format papier distribué dans nos points relais à Kinshasa, Goma, Lubumbashi, Bukavu et Kisangani. Une version numérique PDF est également accessible gratuitement pour les étudiantes, associations et personnes en situation de vulnérabilité.",
+    question: "Comment se procurer le livre « L'ABC des Violences Basées sur le Genre » par NGOIE WA NGOIE ?",
+    answer: "Le livre de NGOIE WA NGOIE est disponible en format papier distribué dans nos points relais à Kinshasa, Goma, Lubumbashi, Bukavu et Kisangani. Une version numérique PDF est également accessible gratuitement pour les étudiantes, associations et personnes en situation de vulnérabilité.",
   },
   {
     category: "confidentialite",
